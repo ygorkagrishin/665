@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Daidalos';
+  src: url("../fonts/Daidalos/Daidalos.eot");
+  src: url("../fonts/Daidalos/Daidalos.eot?#iefix") format("embedded-truetype"), url("../fonts/Daidalos/Daidalos.woff") format("woff"), url("../fonts/Daidalos/Daidalos.ott") format("truetype");
+  font-style: noraml; }
+
+body {
+  width: 100%;
+  overflow: hidden;
+  background-color: black; }
+
+.container-flex {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+  .container-flex .wrapper {
+    margin: auto; }
+  .container-flex span {
+    font-family: 'Daidalos';
+    font-size: 25em;
+    text-shadow: 5px 5px 7px black;
+    color: #F71B72;
+    line-height: 1.5em; }
+    .container-flex span:nth-child(3) {
+      animation-name: five;
+      animation-duration: 11s;
+      animation-iteration-count: infinite; }
+    .container-flex span:nth-child(2) {
+      animation-name: six;
+      animation-duration: 15s;
+      animation-iteration-count: infinite; }
+    .container-flex span:nth-child(1) {
+      animation-name: six_second;
+      animation-duration: 21s;
+      animation-iteration-count: infinite; }
+
+@keyframes six {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 80px,0 0 30px FireBrick,0 0 6px; }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 1;
+    text-shadow: none; } }
+
+@keyframes five {
+  0%, 12%, 18.999%, 23%, 31.999%, 37%, 44.999%, 46%, 49.999%, 51%, 58.999%, 61%, 68.999%, 71%, 85.999%, 96%, 100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px,0 0 30px FireBrick,0 0 6px; }
+  19%, 22.99%, 32%, 36.999%, 45%, 45.999%, 50%, 50.99%, 59%, 60.999%, 69%, 70.999%, 86%, 95.999% {
+    opacity: 0.4;
+    text-shadow: none; } }
+
+@keyframes six_second {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: 0 0 80px,0 0 30px FireBrick,0 0 6px; }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none; } }
